@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    font-size: 1.4rem;
+}
+
+
+
+header{
+    height:10rem;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    color: black;
+}
+
+.header__div1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+
+.header_logo{
+    font-size: 2rem;
+}
+
+.header__div1--logo{
+    font-size: 2.5rem;
+}
+
+
+.header__div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.header__div2--div{
+    /* border-radius: 4rem;
+    background: rgb(0, 98, 255);
+    border:solid 0.01rem rgb(204, 204, 204); */
+    width:8rem;
+    height:3.8rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.projects{
+    min-height: 100vh;
+}
+
+.project {
+    /* height: 55rem; */
+    display: flex;
+    gap: 5rem;
+    padding: 8rem;
+    /* margin-left: 8rem; */
+    /* margin-right: 8rem; */
+    border-top: solid 0.01rem rgb(209, 208, 208);
+}
+
+.project__left {
+    display: flex;
+    align-items: center;
+}
+
+.project__left video {
+    width: 72rem;
+    border-radius: 2rem;
+    border: solid 1rem black;
+}
+
+.project__right{
+    display: flex;
+    justify-content:start;
+    flex-direction: column;
+    gap: 11rem;
+}
+
+.project__right--head{
+    display:flex ;
+    justify-content: space-between;
+}
+
+.project__right--head-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project__right--head-wrapper p{
+    font-size: 1.5rem;
+}
+
+.project__right--image{
+    width: 15rem;
+}
+
+.project__right--details{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & h2{
+        font-size: 3rem;
+    }
+
+    & button{
+        background: black;
+        color: white;
+        height: 3rem;
+        width: 10rem;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+}
+
+
+.footer{
+    height:7rem;
+    background:white;
+    color: black;
+    border-top:solid 0.01rem rgb(226, 225, 225);
+}
+
+
+.divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.footer__down{
+    margin-left:7rem;
+    margin-right:7rem;
+    padding-top: 2.5rem;
+    height:7rem;
+    border-top: solid white 0.01rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}

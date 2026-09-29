@@ -1,0 +1,447 @@
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('fonts/BricolageGrotesque-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 200 800; /* Ondersteunt alle diktes van dit lettertype */
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first-page{
+    background: rgb(64, 137, 206);
+    color: white;
+}
+
+header{
+    height:10rem;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    color: white;
+}
+
+.header__div1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+
+.header_logo{
+    font-size: 2rem;
+}
+
+.header__div1--logo{
+    font-size: 2.5rem;
+}
+
+
+.header__div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.header__div2--div{
+    /* border-radius: 4rem;
+    background: rgb(0, 98, 255);
+    border:solid 0.01rem rgb(204, 204, 204); */
+    width:8rem;
+    height:3.8rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.icon-sun { display: none; }
+.icon-moon { display: block; }
+
+body.dark-theme .icon-sun { display: block; }
+body.dark-theme .icon-moon { display: none; }
+
+#theme-toggle {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: inherit;
+  border:solid 0.1rem rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header__div3--a{
+    border:solid 0.1rem rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 5px;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+.home-page{
+    min-height: 86.3vh;
+    display: flex;
+    align-items: left; 
+    justify-content: center; 
+    padding-left: 50px;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.home-page__div1{
+    display: flex;
+    justify-self: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.home-page__div1-h2-1{
+    font-size: 11rem;
+}
+
+.home-page__div1-h2-2{
+    font-size: 11rem;
+    color: rgb(140, 182, 227);
+}
+
+.home-page__div2-p{
+    font-size: 2.5rem;
+}
+
+.home-page__div3{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+
+.home-page__div3-1{
+    border-radius: 3rem;
+    background:white;
+    color: black;
+    height: 4rem;
+    width: 12rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.home-page__div3-2{
+    border:solid 0.01rem rgb(204, 204, 204);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7rem;
+    height:4rem;
+    width:8rem;
+}
+
+.secondPage{
+    min-height: 100vh;
+    background:white;
+    margin-left: 11rem;
+    margin-right:11rem;
+    margin-top:13.5rem;
+}
+.secondPage__upperText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid 0.01rem rgb(226, 226, 226);
+    padding-bottom: 3rem;
+    margin-bottom: 8rem;
+
+}
+
+.secondPage__upperText-p{
+    letter-spacing: 0.3rem;
+    font-size: 0.9rem;
+    color: rgb(98, 98, 98);
+}
+
+.secondPage__upperText-h2{
+    font-size: 6rem;
+    margin-top:1rem;
+}
+
+.secondPage__upperText-right{
+    color: rgb(98, 98, 98);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: left;
+    flex-direction: column;
+}
+
+.row1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 14rem 14rem;
+    row-gap: 14rem;
+    column-gap: 14rem;
+}
+
+.project{
+    height:60rem;
+    float: none; 
+    width: auto; 
+    border-radius: 2.5rem;
+    position: relative; 
+}
+
+
+/* De blauwe achtergrond (het container-vlak) */
+.card-container {
+  /* Verschillende blauwtinten die in elkaar overvloeien */
+  background: 
+    radial-gradient(circle at 50% 30%, #00b4d8 0%, transparent 60%), /* Lichtblauwe gloed in het midden */
+    radial-gradient(circle at 10% 10%, #0077b6 0%, transparent 50%), /* Subtiele extra highlight linksboven */
+    linear-gradient(135deg, #0096c7 0%, #03045e 100%);             /* Donkerere basis-gradiënt */
+
+  padding: 48px;
+  border-radius: 2.5rem;
+  /* Flexbox om de mockup/foto in het midden te zetten */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50rem;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 750px;
+  height: 33rem;
+  border-radius: 12px;
+  
+  /* Diepe zwevende schaduw achter de foto, zoals in het voorbeeld */
+}
+
+.text-box{
+    height:18rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.text-box-{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Bricolage Grotesque', Geist, Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.text-box__left {
+    width: 14rem;
+    height: 5rem;
+    flex: 0 0 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box__left img,
+.text-box__left svg {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.text-box__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.text-box__text{
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.text-box__text-h2 a{
+    font-size: 3rem;
+    color: black;
+    font-weight: 100;
+}
+
+.text-box__text-p a{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.aboutme {
+    background-color: #fafafa; 
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    gap: 6rem; 
+    padding: 2rem 5%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #111;
+    margin-top: 25rem;
+    border-top: solid rgb(226, 226, 226) 0.01rem;
+}
+
+.aboutme__left img {
+    width: 28rem; 
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    object-fit: cover;
+}
+
+.aboutme__right {
+    max-width: 35rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutme__right h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.15em; 
+    text-transform: uppercase;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.aboutme__right h2 {
+    font-size: 3.9rem;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.aboutme__right p:nth-of-type(1) {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+    color: #111;
+}
+
+.aboutme__right p:nth-of-type(2) {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #555; 
+}
+
+.footer{
+    height:45rem;
+    background:rgb(64, 137, 206);
+    color: white;
+}
+
+.footer__up{
+    height:38rem;
+    margin-left:7rem;
+    margin-right:7rem;
+    padding-top:3rem;
+}
+
+.divider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.splitter1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.splitter2{
+    display: flex;
+    align-items: center;
+}
+
+.footer__up--1{
+    font-size: 1.2rem;
+}
+
+.footer__up--2{
+    font-size: 8rem;
+}
+
+.footer__up--3{
+    font-size: 1.5rem;
+}
+
+.footer__down{
+    margin-left:7rem;
+    margin-right:7rem;
+    padding-top: 2.5rem;
+    height:7rem;
+    border-top: solid white 0.01rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
